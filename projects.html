@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - EEES | SEUSL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+        <div class="nav-logo" onclick="navigateTo('index.html')">
+            <div class="logo-circle-small">
+                <!-- Replace text with your logo image -->
+                <img src="src/images/Logo Colour.png" alt="EEES Logo" class="logo-image">
+            </div>
+            <div class="logo-text">
+                <div class="logo-title">EEES</div>
+                <div class="logo-subtitle">SEUSL</div>
+            </div>
+        </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Innovative solutions and community initiatives by EEES members</p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Smart Grid Monitoring System">
+                    <div class="project-badge technical">Technical</div>
+                    <div class="project-content">
+                        <h3>Smart Grid Monitoring System</h3>
+                        <p>IoT-based system for real-time monitoring and control of electrical grid parameters with predictive analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>4 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop" alt="Renewable Energy Management">
+                    <div class="project-badge technical">Technical</div>
+                    <div class="project-content">
+                        <h3>Renewable Energy Management</h3>
+                        <p>Automated system for optimizing renewable energy distribution in residential areas.</p>
+                        <div class="project-tags">
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">Solar Panels</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>5 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Community Outreach Program">
+                    <div class="project-badge social">Social</div>
+                    <div class="project-content">
+                        <h3>Community Outreach Program</h3>
+                        <p>Educational initiative to teach basic electronics to underprivileged students in rural areas.</p>
+                        <div class="project-tags">
+                            <span class="tag">Education</span>
+                            <span class="tag">Community Service</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>12 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop" alt="Automated Irrigation System">
+                    <div class="project-badge technical">Technical</div>
+                    <div class="project-content">
+                        <h3>Automated Irrigation System</h3>
+                        <p>Smart irrigation system using soil moisture sensors and weather data integration.</p>
+                        <div class="project-tags">
+                            <span class="tag">ESP32</span>
+                            <span class="tag">Sensors</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>3 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop" alt="Digital Circuit Simulator">
+                    <div class="project-badge technical">Technical</div>
+                    <div class="project-content">
+                        <h3>Digital Circuit Simulator</h3>
+                        <p>Web-based tool for simulating and analyzing digital circuits with interactive components.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5 Canvas</span>
+                            <span class="tag">WebGL</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>2 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="STEM Workshop Series">
+                    <div class="project-badge social">Social</div>
+                    <div class="project-content">
+                        <h3>STEM Workshop Series</h3>
+                        <p>Monthly workshops for high school students to explore engineering concepts through hands-on activities.</p>
+                        <div class="project-tags">
+                            <span class="tag">Education</span>
+                            <span class="tag">Workshop Materials</span>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-users"></i>
+                                <span>8 members</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="video-container">
+        <iframe id="videoPlayer" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">
+                            <div class="logo-title">EEES</div>
+                            <div class="logo-subtitle">SEUSL</div>
+                        </div>
+                    </div>
+                    <p>Empowering the next generation of electrical and electronic engineers through innovation, collaboration, and excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>AGM - June 19</li>
+                        <li>E-22 Welcome - October 20</li>
+                        <li>Techno 2025</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>eees@seu.ac.lk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 XX XXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>South Eastern University of Sri Lanka<br>University Park, Oluvil<br>#32360, Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Electrical & Electronic Engineering Society, SEUSL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="video-player.js"></script>
+</body>
+</html>

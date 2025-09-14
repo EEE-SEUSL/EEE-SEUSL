@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - EEES | SEUSL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+        <div class="nav-logo" onclick="navigateTo('index.html')">
+            <div class="logo-circle-small">
+                <!-- Replace text with your logo image -->
+                <img src="src/images/Logo Colour.png" alt="EEES Logo" class="logo-image">
+            </div>
+            <div class="logo-text">
+                <div class="logo-title">EEES</div>
+                <div class="logo-subtitle">SEUSL</div>
+            </div>
+        </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Capturing moments from our events, workshops, and achievements</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-label">
+                    <i class="fas fa-filter"></i>
+                    <span>Filter by:</span>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="2022">2022</button>
+                    <button class="filter-btn" data-filter="workshops">Workshops</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="projects">Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="events 2024">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop" alt="Annual Tech Symposium 2024">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Annual Tech Symposium 2024</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Events</span>
+                                <span class="tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops 2024">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop" alt="Circuit Design Workshop">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Circuit Design Workshop</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Workshops</span>
+                                <span class="tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects 2024">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Smart Grid Project Demo">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Smart Grid Project Demo</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Projects</span>
+                                <span class="tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events 2024">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop" alt="Industry Connect 2024">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Industry Connect 2024</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Events</span>
+                                <span class="tag">2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops 2023">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="IoT Development Bootcamp">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>IoT Development Bootcamp</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Workshops</span>
+                                <span class="tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects 2023">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop" alt="Renewable Energy Project">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Renewable Energy Project</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Projects</span>
+                                <span class="tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events 2023">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&h=400&fit=crop" alt="Community Outreach Program">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Community Outreach Program</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Events</span>
+                                <span class="tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops 2023">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Arduino Programming Workshop">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Arduino Programming Workshop</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Workshops</span>
+                                <span class="tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects 2023">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop" alt="Digital Circuit Simulator">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Digital Circuit Simulator</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Projects</span>
+                                <span class="tag">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events 2022">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="STEM Workshop for Schools">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>STEM Workshop for Schools</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Events</span>
+                                <span class="tag">2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops 2022">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" alt="PCB Design Workshop">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>PCB Design Workshop</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Workshops</span>
+                                <span class="tag">2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects 2022">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=400&fit=crop" alt="Automation Project Showcase">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Automation Project Showcase</h3>
+                            <div class="gallery-tags">
+                                <span class="tag">Projects</span>
+                                <span class="tag">2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <img src="/placeholder.svg" alt="" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">
+                            <div class="logo-title">EEES</div>
+                            <div class="logo-subtitle">SEUSL</div>
+                        </div>
+                    </div>
+                    <p>Empowering the next generation of electrical and electronic engineers through innovation, collaboration, and excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>AGM - June 19</li>
+                        <li>E-22 Welcome - October 20</li>
+                        <li>Techno 2025</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>eees@seu.ac.lk</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 XX XXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>South Eastern University of Sri Lanka<br>University Park, Oluvil<br>#32360, Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Electrical & Electronic Engineering Society, SEUSL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
