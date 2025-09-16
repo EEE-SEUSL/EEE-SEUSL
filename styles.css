@@ -953,6 +953,129 @@ a:focus {
 }
 
 
+
+/* thriple Member Card Styles */
+.member-card.thriple-member {
+  flex: 0 0 500px; /* Don't grow or shrink, fixed base size */
+  min-width: 350px; /* Minimum width */
+  max-width: 500px; /* Maximum width */
+  padding: 1.5rem 1rem;
+  /* margin: 0 auto;  */
+}
+
+.batch-header {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--golden-100);
+}
+
+.batch-header h3 {
+    color: var(--navy-900);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.thriple-members-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center; /* Center the content */
+}
+
+.single-member {
+  flex: 1;
+  text-align: center;
+  min-width: 120px; /* Minimum width for each member */
+}
+
+.single-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--golden-500);
+    margin-bottom: 0.8rem;
+}
+
+.single-member h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--navy-900);
+}
+
+.single-member p {
+    color: var(--golden-600);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+/* thriple Member Card Styles */
+.member-card.single-member {
+  flex: 0 0 250px; /* Don't grow or shrink, fixed base size */
+  min-width: 240px; /* Minimum width */
+  max-width: 300px; /* Maximum width */
+  padding: 1.5rem 1rem;
+  /* margin: 0 auto;  */
+}
+
+.batch-header {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--golden-100);
+}
+
+.batch-header h3 {
+    color: var(--navy-900);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.single-members-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center; /* Center the content */
+}
+
+.single-member {
+  flex: 1;
+  text-align: center;
+  min-width: 120px; /* Minimum width for each member */
+}
+
+.single-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--golden-500);
+    margin-bottom: 0.8rem;
+}
+
+.single-member h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--navy-900);
+}
+
+.single-member p {
+    color: var(--golden-600);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .dual-members-container {
